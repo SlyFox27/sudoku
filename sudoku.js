@@ -119,7 +119,7 @@ function validateSudokuBoard(board) {
   for (let squareX = 0; squareX < SUDOKU_SIZE; squareX += 3) {
     for (let squareY = 0; squareY < SUDOKU_SIZE; squareY += 3) {
       const square = new Set();
-      // Итерируем по клеткам квадратов
+      // Итерируем по клеткам квадртов
       for (let row = squareX; row < squareX + 3; row++) {
         for (let col = squareY; col < squareY + 3; col++) {
           square.add(board[row][col]);

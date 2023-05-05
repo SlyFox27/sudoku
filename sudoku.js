@@ -104,7 +104,7 @@ function validateSudokuBoard(board) {
     }
   }
 
-  // Проверяем колонки
+  // Проверяем клонки
   for (let i = 0; i < SUDOKU_SIZE; i++) {
     const column = new Set();
     for (let j = 0; j < SUDOKU_SIZE; j++) {

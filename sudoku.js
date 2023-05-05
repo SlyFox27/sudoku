@@ -87,7 +87,7 @@ function solveBoard(board) {
       if (solveBoard(board)) {
         return true;
       }
-      // Если с этим числом не решается, то отменяем вставку числа
+      // Если с этим чилом не решается, то отменяем вставку числа
       board[emptyCellX][emptyCellY] = EMPTY_CELL_VALUE;
     }
   }
@@ -104,7 +104,7 @@ function validateSudokuBoard(board) {
     }
   }
 
-  // Проверяем колонки
+  // Проверяем клонки
   for (let i = 0; i < SUDOKU_SIZE; i++) {
     const column = new Set();
     for (let j = 0; j < SUDOKU_SIZE; j++) {
@@ -115,11 +115,11 @@ function validateSudokuBoard(board) {
     }
   }
 
-  // Итерируем по квадратам
+  // Итерируем по квадртам
   for (let squareX = 0; squareX < SUDOKU_SIZE; squareX += 3) {
     for (let squareY = 0; squareY < SUDOKU_SIZE; squareY += 3) {
       const square = new Set();
-      // Итерируем по клеткам квадратов
+      // Итерируем по клеткам квадртов
       for (let row = squareX; row < squareX + 3; row++) {
         for (let col = squareY; col < squareY + 3; col++) {
           square.add(board[row][col]);

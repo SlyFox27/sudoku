@@ -87,7 +87,7 @@ function solveBoard(board) {
       if (solveBoard(board)) {
         return true;
       }
-      // Если с этим числом не решается, то отменяем вставку числа
+      // Если с этим чилом не решается, то отменяем вставку числа
       board[emptyCellX][emptyCellY] = EMPTY_CELL_VALUE;
     }
   }

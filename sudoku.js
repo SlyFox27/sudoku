@@ -115,7 +115,7 @@ function validateSudokuBoard(board) {
     }
   }
 
-  // Итерируем по квадратам
+  // Итерируем по квадртам
   for (let squareX = 0; squareX < SUDOKU_SIZE; squareX += 3) {
     for (let squareY = 0; squareY < SUDOKU_SIZE; squareY += 3) {
       const square = new Set();
